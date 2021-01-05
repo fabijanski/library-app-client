@@ -30,7 +30,7 @@ export default function UsersPage() {
 
   const { users } = data
   return (
-    <SimpleGrid columns="2">
+    <SimpleGrid columns={['1', '2', '4']}>
       {users.map(user => (
         <User key={user.name} user={user} />
       ))}
